@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculo de força resultante</title>
+<script src="atv6.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384
+  QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+  crossorigin="anonymous">
+  
+  
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+  
+    <style>
+      .navbar{
+        background-color: rgb(224, 2, 2);
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Java Script Exercícios</a>
+        </div>
+      </nav>
+
+<h1>calculo de força resultante</h1>
+
+<form id="form">
+<label for="massa">massa do objeto (kg):</label>
+<input type="number" id="massa" required />
+
+<label for="aceleracao1">aceleração 1 (m/s²):</label>
+
+<input type="number" id="aceleracao1" required/>
+
+<br> <br>
+
+<label for="aceleracao2">aceleração 2 (m/s²):</label>
+<input type="number" id="aceleracao2" required/>
+<br> <br>
+
+<button onclick="forcaresultante()">
+    calcular força resultante
+  </button>
+
+</form>
+
+<div id="resultado"></div>
+
+
+<h1>calcular força de ação e reação</h1>
+
+<!-- Força Resultante -->
+
+<form id="form-forca-resultante">
+
+<label for="massa">
+    massa do objeto (kg):
+</label>
+
+<input type="number" id="massa" required/>
+
+<label for="aceleracao1">
+    aceleração 1 (m/s²):
+</label>
+
+<input type="number" id="aceleracao1" required />
+
+<label for="aceleracao2">
+    aceleração 2 (m/s²):
+</label>
+
+<input type="number" id="aceleracao2" required />
+
+<br><br>
+<button type="submit">
+    calcular força resultante
+</button>
+</form>
+
+<br>
+
+<div id="resultado-forca-resultante"></div>
+
+<!-- Força de Ação e Reação -->
+
+<form id="form-acao-reacao">
+
+<label for="massa1">
+    massa do objeto 1 (kg):
+</label>
+
+<input type="number" id="massa1" required />
+
+<label for="massa2">
+    massa do objeto 2 (kg):
+</label>
+
+<input type="number" id="massa2" required />
+
+
+<label for="aceleracao3">
+    aceleração do objeto 1 (m/s²):
+</label>
+
+
+<input type="number" id="aceleracao3" required />
+
+<br><br>
+<label for="aceleracao4">
+    aceleração do objeto 2 (m/s²):
+</label>
+
+<input type="number" id="aceleracao4" required />
+
+<button type="submit">
+    calcular força de ação e reação
+</button>
+</form>
+<br>
+<div id="resultado-acao-reacao"></div>
+
+
+<button type="button" class="btn btn-secondary" onclick="window.location.href='atv.html';">exercício anterior</button>
+    
+
+   
+<button type="button" class="btn btn-danger" onclick="window.location.href='atv7.html';">próximo exercício</button>
+</body>
+</html>
+
